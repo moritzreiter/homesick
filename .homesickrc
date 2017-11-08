@@ -1,0 +1,7 @@
+require 'os'
+
+if OS.mac?
+  puts "It's a Mac!"
+elsif OS.linux?
+  puts "It's a Linux!"
+end
