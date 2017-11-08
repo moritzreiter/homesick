@@ -1,0 +1,43 @@
+[user]
+    email = moritz@anothernode.com
+    name = Moritz Reiter
+[alias]
+    # Core workflow operations
+    s = status --short
+    amend = commit --amend
+    ff = merge --ff-only
+    unstage = reset HEAD --
+
+    # to hell with everything (that happened since the last commit)
+    nevermind = !git reset --hard HEAD && git clean -d -f
+
+    branches = branch -vv
+
+    tags = tag
+
+    # Searching
+    ack = -c color.grep.linenumber=\"bold yellow\" \
+        -c color.grep.filename=\"bold green\" \
+        -c color.grep.match=\"reverse yellow\" \
+        grep --break --heading --line-number
+
+    # Examining history
+    history = log --oneline --decorate --graph
+    changed-files = log --oneline --decorate --name-only
+    patches = log -p
+    lines = log -L # <start>,<end>:<file>
+
+    # Ignoring local files
+    ignore-locally = update-index --skip-worktree
+    unignore-locally = update-index --no-skip-worktree
+    ignored-locally = !git ls-files -v | grep '^S'
+[core]
+    # Get mad if tabs are used for indentation
+    whitespace = tab-in-indent
+    excludesFile = ~/.gitignore_global
+[push]
+    default = simple
+[diff]
+    tool = meld
+[merge]
+    tool = meld
