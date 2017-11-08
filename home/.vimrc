@@ -23,3 +23,6 @@ autocmd Filetype gitcommit setlocal spell textwidth=72
 " 'Ctrl-J' to split lines
 :nnoremap <NL> i<CR><ESC>
 
+augroup filetypedetect
+  au BufRead,BufNewFile .homesickrc setfiletype ruby
+augroup END
