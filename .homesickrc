@@ -2,11 +2,4 @@ require 'os'
 
 if OS.mac?
   system( "git config --global credential.helper osxkeychain" )
-elsif OS.linux?
-  # For this to work, the helper needs to be installed like this:
-  # sudo apt-get install libgnome-keyring-dev
-  # sudo make --directory=/usr/share/doc/git/contrib/credential/gnome-keyring
-  path = "/usr/share/doc/git/contrib/credential/gnome-keyring/"
-  file = "git-credential-gnome-keyring"
-  system( "git config --global credential.helper " + File.join(path, file) )
 end
