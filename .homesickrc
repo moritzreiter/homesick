@@ -1,6 +1,5 @@
 require 'os'
 
 if OS.mac?
-  FileUtils.cp(Dir.getwd + "/.gitconfig_macos", Dir.home)
-  File.rename(Dir.home + "/.gitconfig_macos", Dir.home + "/.gitconfig_local")
+  FileUtils.cp(Dir.getwd + "/.gitconfig_macos", Dir.home + "/.gitconfig_local")
 end
