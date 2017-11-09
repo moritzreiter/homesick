@@ -7,5 +7,5 @@ switch (uname)
   case Darwin
     source $workDir"/config.macos.fish"
   case Linux
-    source $workDr"/config.linux.fish"
+    source $workDir"/config.linux.fish"
 end
