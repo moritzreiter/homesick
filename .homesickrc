@@ -1,5 +1,6 @@
 require 'os'
 
 if OS.mac?
-  system( "git config --global credential.helper osxkeychain" )
+  FileUtils.cp(Dir.getwd + "/.gitconfig_macos", Dir.home)
+  File.rename(Dir.home + "/.gitconfig_macos", Dir.home + "/.gitconfig_local")
 end
