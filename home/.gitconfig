@@ -12,8 +12,8 @@
     nevermind = !git reset --hard HEAD && git clean -d -f
 
     branches = branch -vv
-
     tags = tag
+    stashes = stash list
 
     # Searching
     ack = -c color.grep.linenumber=\"bold yellow\" \
