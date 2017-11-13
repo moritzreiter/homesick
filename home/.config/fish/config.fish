@@ -2,7 +2,7 @@ set -x EDITOR vim
 set -x PYTHONSTARTUP ~/.pythonrc
 
 # Time format for oh-my-fish theme `bobthefish`
-set -g theme_date_format "+%a %Y-%m-%d %H:%M:%S"
+set -g theme_date_format "+%a %b %d %H:%M:%S"
 
 # Load OS specific stuff
 set workDir (dirname (status -f))
