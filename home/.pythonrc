@@ -1,4 +1,4 @@
-# enable syntax completion
+# Enable auto completion
 try:
     import readline
 except ImportError:
