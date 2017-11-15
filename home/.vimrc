@@ -26,3 +26,10 @@ autocmd Filetype gitcommit setlocal spell textwidth=72
 augroup filetypedetect
   au BufRead,BufNewFile .homesickrc setfiletype ruby
 augroup END
+
+" Plugins managed `vim-plug`
+call plug#begin('~/.vim/plugged')
+
+Plug 'wilriker/vim-fish'
+
+call plug#end()
