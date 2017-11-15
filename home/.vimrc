@@ -23,11 +23,12 @@ autocmd Filetype gitcommit setlocal spell textwidth=72
 " 'Ctrl-J' to split lines
 :nnoremap <NL> i<CR><ESC>
 
+" Set Ruby mode for `.homesickrc`
 augroup filetypedetect
   au BufRead,BufNewFile .homesickrc setfiletype ruby
 augroup END
 
-" Plugins managed `vim-plug`
+" Plugins managed by `vim-plug`
 call plug#begin('~/.vim/plugged')
 
 Plug 'wilriker/vim-fish'
