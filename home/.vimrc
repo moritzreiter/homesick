@@ -7,7 +7,7 @@ endif
 " Use 2 spaces for indentation
 set tabstop=8 softtabstop=0 expandtab shiftwidth=2 smarttab
 
-" Define characters signifying whitespaces when using 'set list'
+" Define characters signifying whitespaces when using ':set list'
 set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 
 " Highlight searches
@@ -20,17 +20,15 @@ set hlsearch
 " <https://robots.thoughtbot.com/5-useful-tips-for-a-better-commit-message>
 autocmd Filetype gitcommit setlocal spell textwidth=72
 
-" 'Ctrl-J' to split lines
+" Bind 'Ctrl-J' to split lines
 :nnoremap <NL> i<CR><ESC>
-
-" Set Ruby mode for `.homesickrc`
-augroup filetypedetect
-  au BufRead,BufNewFile .homesickrc setfiletype ruby
-augroup END
 
 " Plugins managed by `vim-plug`
 call plug#begin('~/.vim/plugged')
-
 Plug 'wilriker/vim-fish'
-
 call plug#end()
+
+" Set Ruby mode for `.homesickrc` (this must be at the end of the file)
+augroup filetypedetect
+  au BufRead,BufNewFile .homesickrc setfiletype ruby
+augroup END
