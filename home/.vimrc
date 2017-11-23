@@ -4,6 +4,9 @@ if v:version >= 800
   source $VIMRUNTIME/defaults.vim
 endif
 
+" With this mouse mode, standard copy and paste works in macOS
+set mouse=r
+
 " Use 2 spaces for indentation
 set tabstop=8 softtabstop=0 expandtab shiftwidth=2 smarttab
 
