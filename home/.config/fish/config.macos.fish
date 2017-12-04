@@ -6,6 +6,9 @@ set -x JAVA_HOME $JAVA_8_HOME
 alias java8='set -x JAVA_HOME $JAVA_8_HOME'
 alias java9='set -x JAVA_HOME $JAVA_9_HOME'
 
+# Pull a JDK 9 image for this to work: `docker pull openjdk:9-jdk`
+alias jshell-docker='docker run -it openjdk:9-jdk'
+
 # macOS
 alias launchpad-reset='defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock'
 alias net-listening='lsof -i TCP -s TCP:LISTEN -nP'
