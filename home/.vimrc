@@ -1,5 +1,5 @@
-" Do load the defaults (only availabe since vim 8)
-if v:version >= 800
+" Load the defaults if you are >= 8.0 and not Neovim
+if v:version >= 800 && !has('nvim')
   unlet! skip_defaults_vim
   source $VIMRUNTIME/defaults.vim
 endif
