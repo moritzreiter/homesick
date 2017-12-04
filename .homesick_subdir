@@ -2,3 +2,4 @@
 .config/fish/functions
 .config/htop
 .vim/ftdetect
+.config/nvim
