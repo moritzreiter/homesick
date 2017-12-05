@@ -4,6 +4,8 @@ if v:version >= 800 && !has('nvim')
   source $VIMRUNTIME/defaults.vim
 endif
 
+set background = "dark"
+
 " With this mouse mode, standard copy and paste works in macOS
 set mouse=r
 
@@ -28,5 +30,8 @@ autocmd Filetype gitcommit setlocal spell textwidth=72
 
 " Plugins managed by `vim-plug`
 call plug#begin('~/.vim/plugged')
+Plug 'flazz/vim-colorschemes'
 Plug 'wilriker/vim-fish'
 call plug#end()
+
+colorscheme solarized
