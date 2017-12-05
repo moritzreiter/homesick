@@ -1,4 +1,3 @@
-set -x LANG en_US
 set -x EDITOR vim
 set -x PYTHONSTARTUP ~/.pythonrc
 
