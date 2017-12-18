@@ -4,6 +4,12 @@ set -x PYTHONSTARTUP ~/.pythonrc
 # Time format for oh-my-fish theme `bobthefish`
 set -g theme_date_format "+%a %b %d %H:%M:%S"
 
+# Pull a JDK 9 image for this to work: `docker pull openjdk:9-jdk`
+alias jshell-docker='docker run --rm -it openjdk:9-jdk'
+
+# Install with `docker pull wappalyzer/cli`
+alias wappalyzer='docker run --rm wappalyzer/cli'
+
 # Load OS specific stuff
 set workDir (dirname (status -f))
 switch (uname)
