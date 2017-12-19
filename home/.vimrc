@@ -25,6 +25,10 @@ set hlsearch
 " <https://robots.thoughtbot.com/5-useful-tips-for-a-better-commit-message>
 autocmd Filetype gitcommit setlocal spell textwidth=72
 
+" And make sure the cursor is in first line when editing git commit messages
+autocmd BufReadPost COMMIT_EDITMSG
+  \ exe "normal! gg"
+
 " Bind 'Ctrl-J' to split lines
 :nnoremap <NL> i<CR><ESC>
 
