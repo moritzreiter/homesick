@@ -10,6 +10,8 @@ alias jshell-docker='docker run --rm -it openjdk:9-jdk'
 # Install with `docker pull wappalyzer/cli`
 alias wappalyzer='docker run --rm wappalyzer/cli'
 
+alias emacs='emacs --no-window-system'
+
 # Load OS specific stuff
 set workDir (dirname (status -f))
 switch (uname)
