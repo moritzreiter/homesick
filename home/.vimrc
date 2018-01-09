@@ -30,15 +30,13 @@ autocmd BufReadPost COMMIT_EDITMSG
   \ exe "normal! gg"
 
 " Bind 'Ctrl-J' to split lines
-:nnoremap <NL> i<CR><ESC> 
+nnoremap <NL> i<CR><ESC>
 
 " Move line(s) up/down with 'Shift+Opt+k/j'
 nnoremap Ô :m .+1<CR>==
 nnoremap  :m .-2<CR>==
-
 inoremap Ô <Esc>:m .+1<CR>==gi
 inoremap  <Esc>:m .-2<CR>==gi
-
 vnoremap Ô :m '>+1<CR>gv=gv
 vnoremap  :m '<-2<CR>gv=gv
 
