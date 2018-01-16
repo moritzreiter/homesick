@@ -6,3 +6,18 @@ except ImportError:
 else:
     import rlcompleter
     readline.parse_and_bind("tab: complete")
+
+# Enable pretty printing
+import pprint
+import sys
+
+orig_displayhook = sys.displayhook
+
+def pprint_displayhook(value):
+    if value != None:
+        __builtins__._ = value
+        pprint.pprint(value)
+
+__builtins__.pprint_on = lambda: setattr(sys, 'displayhook', pprint_displayhook)
+__builtins__.pprint_off = lambda: setattr(sys, 'displayhook', orig_displayhook)
+pprint_on()
