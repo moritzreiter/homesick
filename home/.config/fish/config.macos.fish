@@ -13,6 +13,9 @@ set -x JAVA_HOME $JAVA_8_HOME
 alias java8='set -x JAVA_HOME $JAVA_8_HOME'
 alias java9='set -x JAVA_HOME $JAVA_9_HOME'
 
+# GitHub
+alias git='hub'
+
 # macOS
 alias launchpad-reset='defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock'
 alias net-listening='lsof -i TCP -s TCP:LISTEN -nP'
