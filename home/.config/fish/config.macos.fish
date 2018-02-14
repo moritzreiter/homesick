@@ -13,6 +13,10 @@ set -x JAVA_HOME $JAVA_8_HOME
 alias java8='set -x JAVA_HOME $JAVA_8_HOME'
 alias java9='set -x JAVA_HOME $JAVA_9_HOME'
 
+# Locale
+set -x LC_ALL en_US.UTF-8
+set -x LANG en_US.UTF-8
+
 # GitHub
 alias git='hub'
 
