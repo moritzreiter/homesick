@@ -4,3 +4,4 @@
 .vim/ftdetect
 .config/nvim
 .config
+.ptpython
