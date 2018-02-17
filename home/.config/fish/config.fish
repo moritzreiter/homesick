@@ -1,6 +1,9 @@
 set -x EDITOR vim
-set -x PYTHONSTARTUP ~/.pythonrc
 set -x UNCRUSTIFY_CONFIG ~/.config/uncrustify
+
+# Python
+set -x PYTHONSTARTUP ~/.pythonrc
+set -x PIP_REQUIRE_VIRTUALENV true
 
 # Time format for oh-my-fish theme `bobthefish`
 set -g theme_date_format "+%a %b %d %H:%M:%S"
