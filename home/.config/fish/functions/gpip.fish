@@ -1,6 +1,6 @@
 function gpip
   set PIP_REQUIRE_VIRTUALENV false
-  pip $argv
+  pip3 $argv
   set PIP_REQUIRE_VIRTUALENV true
 end
 
