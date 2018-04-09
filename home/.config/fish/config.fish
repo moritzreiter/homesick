@@ -15,9 +15,6 @@ alias jshell-docker='docker run --rm -it openjdk:9-jdk'
 # Install with `docker pull wappalyzer/cli`
 alias wappalyzer='docker run --rm wappalyzer/cli'
 
-# Install with `docker pull swaggerapi/swagger-editor`
-alias swagger-editor='docker run -d --run -p 80:8080 swaggerapi/swagger-editor'
-
 alias emacs='emacs --no-window-system'
 
 # Load OS specific stuff
