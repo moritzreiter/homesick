@@ -4,6 +4,12 @@ if v:version >= 800 && !has('nvim')
   source $VIMRUNTIME/defaults.vim
 endif
 
+" Always show the powerful powerline
+python3 from powerline.vim import setup as powerline_setup
+python3 powerline_setup()
+python3 del powerline_setup
+set laststatus=2
+
 set background=dark
 
 " With this mouse mode, standard copy and paste works in macOS
@@ -47,3 +53,4 @@ Plug 'wilriker/vim-fish'
 call plug#end()
 
 colorscheme solarized
+
