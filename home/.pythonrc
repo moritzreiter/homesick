@@ -20,4 +20,4 @@ def pprint_displayhook(value):
 
 __builtins__.pprint_on = lambda: setattr(sys, 'displayhook', pprint_displayhook)
 __builtins__.pprint_off = lambda: setattr(sys, 'displayhook', orig_displayhook)
-pprint_on()
+pprint_off()
