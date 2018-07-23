@@ -5,12 +5,7 @@ if v:version >= 800 && !has('nvim')
 endif
 
 " Always show the powerful powerline.
-" The silent command suppresses a warning that results from Vim not being
-" fully compatible with Python 3.7 yet. It should be removed as soon as that's
-" fixed.
-" - https://github.com/powerline/powerline/issues/1925#issuecomment-402635097
-" - https://github.com/vim/vim/issues/3117
-silent! python3 from powerline.vim import setup as powerline_setup
+python3 from powerline.vim import setup as powerline_setup
 python3 powerline_setup()
 python3 del powerline_setup
 set laststatus=2
