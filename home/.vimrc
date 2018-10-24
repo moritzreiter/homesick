@@ -5,10 +5,12 @@ if v:version >= 800 && !has('nvim')
 endif
 
 " Always show the powerful powerline.
-python3 from powerline.vim import setup as powerline_setup
-python3 powerline_setup()
-python3 del powerline_setup
-set laststatus=2
+if has("python3")
+  python3 from powerline.vim import setup as powerline_setup
+  python3 powerline_setup()
+  python3 del powerline_setup
+  set laststatus=2
+endif
 
 set background=dark
 
