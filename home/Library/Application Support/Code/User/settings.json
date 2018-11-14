@@ -1,0 +1,23 @@
+{
+    "editor.fontFamily": "Hack",
+    "workbench.statusBar.feedback.visible": false,
+    "workbench.colorTheme": "Solarized Dark",
+    "markdownlint.config": {
+        "MD013": true
+    },
+    "editor.renderControlCharacters": false,
+    "window.zoomLevel": 0,
+    "explorer.confirmDelete": false,
+    "editor.fontSize": 14,
+    "editor.renderWhitespace": "boundary",
+    "files.autoSave": "afterDelay",
+    "editor.rulers": [
+        80
+    ],
+    "terminal.integrated.fontSize": 14,
+    "explorer.confirmDragAndDrop": false,
+    "terminal.integrated.scrollback": 100000,
+    "terminal.integrated.env.osx": {
+        "VSCODE_INTEGRATED_TERMINAL": "true"
+    }
+}

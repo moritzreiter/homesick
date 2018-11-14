@@ -54,5 +54,7 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'wilriker/vim-fish'
 call plug#end()
 
-colorscheme solarized
+if !($VSCODE_INTEGRATED_TERMINAL == "true")
+  colorscheme solarized
+endif
 

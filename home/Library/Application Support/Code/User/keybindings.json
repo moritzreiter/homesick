@@ -1,0 +1,19 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+    {
+        "key": "alt+a",
+        "command": "git.stageAll"
+    },
+    {
+        "key": "alt+c",
+        "command": "git.commitStaged"
+    },
+    {
+        "key": "cmd+up",
+        "command": "workbench.action.toggleMaximizedPanel"
+    },
+    {
+        "key": "alt+p",
+        "command": "git.push"
+    }
+]
