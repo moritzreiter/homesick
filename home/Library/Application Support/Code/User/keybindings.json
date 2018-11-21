@@ -15,5 +15,9 @@
     {
         "key": "alt+p",
         "command": "git.push"
+    },
+    {
+        "key": "alt+q",
+        "command": "-extension.queryBuild"
     }
 ]
