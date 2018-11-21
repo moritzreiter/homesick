@@ -31,6 +31,9 @@
   ignore-locally = update-index --skip-worktree
   unignore-locally = update-index --no-skip-worktree
   ignored-locally = !git ls-files -v | grep '^S'
+
+  # Cleanup
+  cleanup-merged-branches = "!git branch --merged | grep  -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d"
 [core]
   # Get mad if tabs are used for indentation
   whitespace = tab-in-indent
