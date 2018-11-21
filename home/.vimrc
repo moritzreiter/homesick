@@ -27,7 +27,7 @@ set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 set hlsearch
 
 " Show line numbers
-set number
+"set number
 
 " Help to write better git commit messages
 " <https://robots.thoughtbot.com/5-useful-tips-for-a-better-commit-message>
