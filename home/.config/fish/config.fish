@@ -27,3 +27,4 @@ switch (uname)
     source $workDir"/config.linux.fish"
 end
 
+set -g fish_user_paths "/usr/local/opt/postgresql@9.6/bin" $fish_user_paths
