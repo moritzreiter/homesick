@@ -9,7 +9,7 @@
     "window.zoomLevel": 0,
     "explorer.confirmDelete": false,
     "editor.fontSize": 14,
-    "editor.renderWhitespace": "boundary",
+    "editor.renderWhitespace": "none",
     "files.autoSave": "afterDelay",
     "editor.rulers": [
         80
@@ -48,5 +48,15 @@
         "typescript",
         "typescriptreact",
         "yml"
-    ]
+    ],
+    "xmlTools.enforcePrettySelfClosingTagOnFormat": true,
+    "xmlTools.splitAttributesOnFormat": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "workbench.statusBar.visible": true,
+    "workbench.activityBar.visible": true,
+    "workbench.sideBar.location": "left",
+    "java.home": "/Library/Java/JavaVirtualMachines/openjdk-11.0.1.jdk/Contents/Home"
 }
