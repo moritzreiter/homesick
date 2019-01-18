@@ -10,9 +10,6 @@ if test (eval $java_home_cmd -v11)
 end
 set -x JAVA_HOME $JAVA_8_HOME
 
-alias java8='set -x JAVA_HOME $JAVA_8_HOME'
-alias java11='set -x JAVA_HOME $JAVA_11_HOME'
-
 # Python
 alias pip='pip3'
 
