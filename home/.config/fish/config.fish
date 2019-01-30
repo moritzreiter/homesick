@@ -28,3 +28,8 @@ switch (uname)
 end
 
 set -g fish_user_paths "/usr/local/opt/postgresql@9.6/bin" $fish_user_paths
+
+if command -sq fortune
+    fortune oblique
+end
+
