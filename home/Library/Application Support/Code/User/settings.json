@@ -58,5 +58,9 @@
     "workbench.statusBar.visible": true,
     "workbench.activityBar.visible": true,
     "workbench.sideBar.location": "left",
-    "java.home": "/Library/Java/JavaVirtualMachines/openjdk-11.0.1.jdk/Contents/Home"
+    "java.home": "/Library/Java/JavaVirtualMachines/openjdk-11.0.2.jdk/Contents/Home",
+    "[html]": {
+        "editor.tabSize": 2,
+    },
+    "workbench.editor.showTabs": true
 }

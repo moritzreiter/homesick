@@ -19,5 +19,13 @@
     {
         "key": "alt+q",
         "command": "-extension.queryBuild"
+    },
+    {
+        "key": "ctrl+cmd+w",
+        "command": "workbench.action.quickSwitchWindow"
+    },
+    {
+        "key": "ctrl+cmd+w",
+        "command": "-workbench.action.toggleTabsVisibility"
     }
 ]
