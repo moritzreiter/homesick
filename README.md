@@ -37,3 +37,12 @@ omf install bobthefish
 
 For the powerline to look good, the font used in the terminal needs to support
 it. I use the [Hack font](https://sourcefoundry.org/hack/).
+
+## Vim
+
+For the `.vimrc` to work flawlessly, install the `powerline-status` python
+module:
+
+```sh
+pip3 install powerline-status
+```
