@@ -46,3 +46,5 @@ module:
 ```sh
 pip3 install powerline-status
 ```
+
+Then, run Vim and execute `:PlugInstall`.
