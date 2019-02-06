@@ -7,3 +7,33 @@ If you want to find out more on what this is all about, you may want to have
 look at [that
 article](https://blog.anothernode.com/2017/11/26/home-improvement-galore/) on my
 blog.
+
+# Preconditions
+
+For everything to work as intended, a few preconditions should be met.
+
+## Ruby Gems
+
+In order to run the `.homesickrc`, the `os` ruby gem is needed:
+
+```sh
+sudo gem install os
+```
+
+## Fish
+
+To use the `fish` configuration properly, change the default shell to fish:
+
+```sh
+chsh -s /usr/bin/fish
+```
+
+Install _Oh My Fish_ and the `bobthefish` theme:
+
+```sh
+curl -L https://get.oh-my.fish | fish
+omf install bobthefish
+```
+
+For the powerline to look good, the font used in the terminal needs to support
+it. I use the [Hack font](https://sourcefoundry.org/hack/).
