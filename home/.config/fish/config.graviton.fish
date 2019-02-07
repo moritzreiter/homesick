@@ -1,4 +1,4 @@
-# Linux specific fish configuration here
+# Host specific fish configuration for graviton here
 
 # Set up keychain, which persists SSH keys in SSH agent across login sessions
 # https://www.funtoo.org/Keychain

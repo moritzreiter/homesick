@@ -18,13 +18,14 @@ alias wappalyzer='docker run --rm wappalyzer/cli'
 
 alias emacs='emacs --no-window-system'
 
-# Load OS specific stuff
 set workDir (dirname (status -f))
-switch (uname)
-  case Darwin
+# Load macOS specific stuff
+if test (uname) = Darwin
     source $workDir"/config.macos.fish"
-  case Linux
-    source $workDir"/config.linux.fish"
+end
+
+if test (hostname) = graviton
+    source $workDir"config.graviton.fish"
 end
 
 set -g fish_user_paths "/usr/local/opt/postgresql@9.6/bin" $fish_user_paths
@@ -32,4 +33,3 @@ set -g fish_user_paths "/usr/local/opt/postgresql@9.6/bin" $fish_user_paths
 if command -sq fortune
     fortune oblique
 end
-
