@@ -28,7 +28,7 @@ if test (hostname) = graviton
     source $workDir"config.graviton.fish"
 end
 
-
+# https://github.com/mattreduce/oblique-fortunes
 if command -sq fortune
     fortune oblique
 end
