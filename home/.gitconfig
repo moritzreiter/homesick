@@ -27,7 +27,7 @@
   patches = log -p
   lines = log -L # <start>,<end>:<file>
 
-  # Ignoring local files
+  # Ignoring files locally
   ignore-locally = update-index --skip-worktree
   unignore-locally = update-index --no-skip-worktree
   ignored-locally = !git ls-files -v | grep '^S'
