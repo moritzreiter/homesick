@@ -2,9 +2,6 @@
 set -x LC_ALL en_US.UTF-8
 set -x LANG en_US.UTF-8
 
-# GitHub
-alias git='hub'
-
 # Java
 set -x JAVA_8_HOME ''
 set -x JAVA_11_HOME ''
