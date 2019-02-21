@@ -7,3 +7,4 @@
 .ptpython
 Library/Application Support/Code/User
 .vim/autoload
+.config/fish/completions
