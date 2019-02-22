@@ -29,6 +29,6 @@ if test (hostname) = graviton
 end
 
 # https://github.com/mattreduce/oblique-fortunes
-if command -sq fortune
+if command -s fortune
     fortune oblique
 end
