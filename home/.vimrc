@@ -29,8 +29,6 @@ set hlsearch
 " Show line numbers
 "set number
 
-autocmd BufRead,BufNewFile /etc/nginx/sites-*/* setfiletype nginx
-
 " Help to write better git commit messages
 " <https://robots.thoughtbot.com/5-useful-tips-for-a-better-commit-message>
 autocmd Filetype gitcommit setlocal spell textwidth=72
@@ -54,6 +52,7 @@ vnoremap  :m '<-2<CR>gv=gv
 call plug#begin('~/.vim/plugged')
 Plug 'altercation/vim-colors-solarized'
 Plug 'wilriker/vim-fish'
+Plug 'vim-scripts/nginx.vim'
 call plug#end()
 
 if !($VSCODE_INTEGRATED_TERMINAL == "true")
