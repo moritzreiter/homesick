@@ -18,6 +18,8 @@ alias wappalyzer='docker run --rm wappalyzer/cli'
 
 alias emacs='emacs --no-window-system'
 
+alias svim='sudo -E vim'
+
 set workDir (dirname (status -f))
 # Load macOS specific stuff
 if test (uname) = Darwin
@@ -29,6 +31,6 @@ if test (hostname) = graviton
 end
 
 # https://github.com/mattreduce/oblique-fortunes
-if command -sq fortune
+if command -s fortune
     fortune oblique
 end
