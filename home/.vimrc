@@ -29,6 +29,8 @@ set hlsearch
 " Show line numbers
 "set number
 
+autocmd BufRead,BufNewFile /etc/nginx/sites-*/* setfiletype nginx
+
 " Help to write better git commit messages
 " <https://robots.thoughtbot.com/5-useful-tips-for-a-better-commit-message>
 autocmd Filetype gitcommit setlocal spell textwidth=72
