@@ -52,7 +52,7 @@ vnoremap  :m '<-2<CR>gv=gv
 call plug#begin('~/.vim/plugged')
 Plug 'altercation/vim-colors-solarized'
 Plug 'wilriker/vim-fish'
-Plug 'vim-scripts/nginx.vim'
+Plug 'chr4/nginx.vim'
 call plug#end()
 
 if !($VSCODE_INTEGRATED_TERMINAL == "true")
