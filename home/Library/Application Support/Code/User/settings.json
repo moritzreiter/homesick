@@ -1,27 +1,41 @@
 {
-    "editor.fontFamily": "Hack",
-    "workbench.statusBar.feedback.visible": false,
-    "workbench.colorTheme": "Solarized Dark",
-    "markdownlint.config": {
-        "MD013": true
-    },
-    "editor.renderControlCharacters": false,
     "window.zoomLevel": 0,
-    "explorer.confirmDelete": false,
+    "workbench.activityBar.visible": true,
+    "workbench.colorTheme": "Solarized Dark",
+    "workbench.editor.showTabs": true,
+    "workbench.sideBar.location": "left",
+    "workbench.statusBar.feedback.visible": false,
+    "workbench.statusBar.visible": true,
+    "editor.fontFamily": "Hack",
     "editor.fontSize": 14,
     "editor.renderWhitespace": "none",
-    "files.autoSave": "afterDelay",
+    "editor.renderControlCharacters": false,
+    "editor.largeFileOptimizations": false,
     "editor.rulers": [
         80
     ],
+    "diffEditor.ignoreTrimWhitespace": false,
     "terminal.integrated.fontSize": 14,
-    "explorer.confirmDragAndDrop": false,
     "terminal.integrated.scrollback": 100000,
-    "terminal.integrated.env.osx": {
-        "VSCODE_INTEGRATED_TERMINAL": "true"
-    },
     "terminal.integrated.cursorBlinking": true,
-    "editor.largeFileOptimizations": false,
+    "terminal.integrated.env.osx": {
+        "VSCODE": "true"
+    },
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "files.autoSave": "afterDelay",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "markdownlint.config": {
+        "MD013": true
+    },
+    "java.home": "/Library/Java/JavaVirtualMachines/openjdk-11.0.2.jdk/Contents/Home",
+    "[html]": {
+        "editor.tabSize": 2,
+    },
+    "xmlTools.enforcePrettySelfClosingTagOnFormat": true,
+    "xmlTools.splitAttributesOnFormat": true,
     "cSpell.enabledLanguageIds": [
         "asciidoc",
         "c",
@@ -49,18 +63,4 @@
         "typescriptreact",
         "yml"
     ],
-    "xmlTools.enforcePrettySelfClosingTagOnFormat": true,
-    "xmlTools.splitAttributesOnFormat": true,
-    "files.insertFinalNewline": true,
-    "files.trimFinalNewlines": true,
-    "files.trimTrailingWhitespace": true,
-    "diffEditor.ignoreTrimWhitespace": false,
-    "workbench.statusBar.visible": true,
-    "workbench.activityBar.visible": true,
-    "workbench.sideBar.location": "left",
-    "java.home": "/Library/Java/JavaVirtualMachines/openjdk-11.0.2.jdk/Contents/Home",
-    "[html]": {
-        "editor.tabSize": 2,
-    },
-    "workbench.editor.showTabs": true
 }
