@@ -18,9 +18,6 @@
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.scrollback": 100000,
     "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.env.osx": {
-        "VSCODE": "true"
-    },
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "files.autoSave": "afterDelay",

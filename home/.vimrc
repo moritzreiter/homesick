@@ -55,7 +55,7 @@ Plug 'wilriker/vim-fish'
 Plug 'chr4/nginx.vim'
 call plug#end()
 
-if !($VSCODE == "true")
+if !($TERM_PROGRAM == "vscode")
   colorscheme solarized
 endif
 
