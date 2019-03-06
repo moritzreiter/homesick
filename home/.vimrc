@@ -31,7 +31,7 @@ set hlsearch
 
 " Help to write better git commit messages
 " <https://robots.thoughtbot.com/5-useful-tips-for-a-better-commit-message>
-autocmd Filetype gitcommit setlocal spell textwidth=72
+autocmd Filetype "gitcommit" setlocal spell textwidth=72
 
 " And make sure the cursor is in first line when editing git commit messages
 autocmd BufReadPost COMMIT_EDITMSG
@@ -40,19 +40,12 @@ autocmd BufReadPost COMMIT_EDITMSG
 " Bind 'Ctrl-J' to split lines
 nnoremap <NL> i<CR><ESC>
 
-" Move line(s) up/down with 'Shift+Opt+k/j'
-nnoremap Ô :m .+1<CR>==
-nnoremap  :m .-2<CR>==
-inoremap Ô <Esc>:m .+1<CR>==gi
-inoremap  <Esc>:m .-2<CR>==gi
-vnoremap Ô :m '>+1<CR>gv=gv
-vnoremap  :m '<-2<CR>gv=gv
-
 " Plugins managed by `vim-plug`
 call plug#begin('~/.vim/plugged')
 Plug 'altercation/vim-colors-solarized'
 Plug 'wilriker/vim-fish'
 Plug 'chr4/nginx.vim'
+Plug 'tpope/vim-surround'
 call plug#end()
 
 if !($TERM_PROGRAM == "vscode")
