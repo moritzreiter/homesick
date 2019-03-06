@@ -7,13 +7,11 @@
     "workbench.statusBar.feedback.visible": false,
     "workbench.statusBar.visible": true,
     "editor.fontFamily": "Hack",
-    "editor.fontSize": 14,
+    "editor.fontSize": 13,
     "editor.renderWhitespace": "none",
     "editor.renderControlCharacters": false,
     "editor.largeFileOptimizations": false,
-    "editor.rulers": [
-        80
-    ],
+    "editor.rulers": [80],
     "diffEditor.ignoreTrimWhitespace": false,
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.scrollback": 100000,
@@ -60,4 +58,12 @@
         "typescriptreact",
         "yml"
     ],
+    "editor.lineNumbers": "relative",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "breadcrumbs.enabled": false,
 }
