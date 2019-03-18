@@ -20,9 +20,6 @@ set mouse=r
 " Use 2 spaces for indentation
 set tabstop=8 softtabstop=0 expandtab shiftwidth=2 smarttab
 
-" Define characters signifying whitespaces when using ':set list'
-set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
-
 " Highlight searches
 set hlsearch
 
@@ -39,14 +36,6 @@ autocmd BufReadPost COMMIT_EDITMSG
 
 " Bind 'Ctrl-J' to split lines
 nnoremap <NL> i<CR><ESC>
-
-" Move line(s) up/down with 'Shift+Opt+k/j'
-nnoremap Ô :m .+1<CR>==
-nnoremap  :m .-2<CR>==
-inoremap Ô <Esc>:m .+1<CR>==gi
-inoremap  <Esc>:m .-2<CR>==gi
-vnoremap Ô :m '>+1<CR>gv=gv
-vnoremap  :m '<-2<CR>gv=gv
 
 " Plugins managed by `vim-plug`
 call plug#begin('~/.vim/plugged')
