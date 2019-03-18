@@ -9,3 +9,4 @@ Library/Application Support/Code/User
 .vim/autoload
 .config/fish/completions
 .vim/syntax
+.config/Code/User
