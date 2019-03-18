@@ -26,8 +26,11 @@ if test (uname) = Darwin
     source $workDir"/config.macos.fish"
 end
 
-if test (hostname) = graviton
-    source $workDir"config.graviton.fish"
+if begin
+    test (hostname) = graviton
+    or test (hostname) = golem-pi-zero
+end
+    source $workDir"/config.ssh-keychain.fish"
 end
 
 # https://github.com/mattreduce/oblique-fortunes
