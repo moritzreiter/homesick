@@ -26,8 +26,10 @@ if test (uname) = Darwin
     source $workDir"/config.macos.fish"
 end
 
-if test (hostname) = graviton
-or test (hostname) = gole-pi-zero
+if begin
+    test (hostname) = graviton
+    or test (hostname) = gole-pi-zero
+end
     source $workDir"config.ssh-keychain.fish"
 end
 
