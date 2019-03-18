@@ -28,6 +28,8 @@ end
 
 if test (hostname) = graviton
     source $workDir"config.graviton.fish"
+else if test (hostname) = golem-pi-zero
+    source $workDir"config.golem-pi-zero.fish"
 end
 
 # https://github.com/mattreduce/oblique-fortunes
