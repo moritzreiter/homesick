@@ -28,9 +28,9 @@ end
 
 if begin
     test (hostname) = graviton
-    or test (hostname) = gole-pi-zero
+    or test (hostname) = golem-pi-zero
 end
-    source $workDir"config.ssh-keychain.fish"
+    source $workDir"/config.ssh-keychain.fish"
 end
 
 # https://github.com/mattreduce/oblique-fortunes
