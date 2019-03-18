@@ -27,7 +27,7 @@
     "markdownlint.config": {
         "MD013": true
     },
-    "java.home": "/Library/Java/JavaVirtualMachines/openjdk-11.0.2.jdk/Contents/Home",
+    "java.home": "/usr/lib/jvm/java-11-openjdk-amd64",
     "[html]": {
         "editor.tabSize": 2,
     },
@@ -60,4 +60,11 @@
         "typescriptreact",
         "yml"
     ],
+    "terminal.integrated.fontFamily": "Hack",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
 }
