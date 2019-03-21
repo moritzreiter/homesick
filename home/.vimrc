@@ -20,9 +20,6 @@ set mouse=r
 " Use 2 spaces for indentation
 set tabstop=8 softtabstop=0 expandtab shiftwidth=2 smarttab
 
-" Define characters signifying whitespaces when using ':set list'
-set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
-
 " Highlight searches
 set hlsearch
 
