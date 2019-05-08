@@ -5,6 +5,7 @@ set -x LANG en_US.UTF-8
 # Java
 set -x JAVA_8_HOME ''
 set -x JAVA_11_HOME ''
+set -x JAVA_12_HOME ''
 set java_home_cmd '/usr/libexec/java_home 2>/dev/null --failfast'
 if test (eval $java_home_cmd -v1.8)
     set -x JAVA_8_HOME (eval $java_home_cmd -v1.8)
@@ -12,7 +13,10 @@ end
 if test (eval $java_home_cmd -v11)
     set -x JAVA_11_HOME (eval $java_home_cmd -v11)
 end
-set -x JAVA_HOME $JAVA_8_HOME
+if test (eval $java_home_cmd -v12)
+    set -x JAVA_12_HOME (eval $java_home_cmd -v12)
+end
+set -x JAVA_HOME $JAVA_12_HOME
 
 # Python
 alias pip='pip3'
