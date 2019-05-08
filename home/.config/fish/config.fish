@@ -34,6 +34,6 @@ end
 end
 
 # https://github.com/mattreduce/oblique-fortunes
-if command -s fortune
+if begin set -q TERM; and command --quiet --search fortune; end
     fortune oblique
 end
