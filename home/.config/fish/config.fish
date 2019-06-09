@@ -34,6 +34,8 @@ end
 end
 
 # https://github.com/mattreduce/oblique-fortunes
-if begin set -q TERM; and command --quiet --search fortune; end
+# Would be nice to add --quiet to the command call, but it's not supported
+# in fish 2.4 which is still in use on Raspbian
+if begin set -q TERM; and command --search fortune; end
     fortune oblique
 end
