@@ -49,5 +49,8 @@ pip3 install powerline-status
 
 Then, run Vim and execute `:PlugInstall`.
 
+You'll also need a `vim` installation that supports `phthon3`. You can check
+this by executing `:version` inside `vim`.
+
 Also, for the `solarized` color theme to not look wacky, don't forget to also
 set your terminals color palette to solarized.
