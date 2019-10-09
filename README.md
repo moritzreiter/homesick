@@ -48,3 +48,6 @@ pip3 install powerline-status
 ```
 
 Then, run Vim and execute `:PlugInstall`.
+
+Also, for the `solarized` color theme to not look wacky, don't forget to also
+set your terminals color palette to solarized.

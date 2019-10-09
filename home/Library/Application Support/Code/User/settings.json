@@ -64,7 +64,7 @@
         "**/.settings": true,
         "**/.factorypath": true
     },
-    "breadcrumbs.enabled": false,
+    "breadcrumbs.enabled": true,
     "python.jediEnabled": false,
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
