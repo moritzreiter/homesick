@@ -14,9 +14,5 @@ if OS.mac?
   gitconfig_local = Dir.home + "/.gitconfig_local"
   FileUtils.cp(gitconfig_macos, gitconfig_local)
 
-  atom_keymap_macos = Dir.getwd + "/atom/keymap-macos.cson"
-  atom_keymap = Dir.home + "/.atom/keymap.cson"
-  FileUtils.cp(atom_keymap_macos, atom_keymap)
-
   system("sh bin/macos-defaults.sh")
 end
