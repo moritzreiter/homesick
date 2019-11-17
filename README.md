@@ -22,10 +22,11 @@ sudo gem install os
 
 ## Fish
 
-To use the `fish` configuration properly, change the default shell to fish:
+To use the `fish` configuration properly, change the default shell to fish. Add
+it to `/etc/shells` first.
 
 ```sh
-chsh -s /usr/bin/fish
+chsh -s /usr/local/bin/fish
 ```
 
 Install _Oh My Fish_ and the `bobthefish` theme:
