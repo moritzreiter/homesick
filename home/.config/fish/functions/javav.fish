@@ -3,8 +3,8 @@ function javav
         set -x JAVA_HOME $JAVA_8_HOME
     else if test $argv = 11
         set -x JAVA_HOME $JAVA_11_HOME
-    else if test $argv = 12
-        set -x JAVA_HOME $JAVA_12_HOME
+    else if test $argv = 13
+        set -x JAVA_HOME $JAVA_13_HOME
     end
 
     # Clear possible existing JDK paths from $PATH
@@ -14,8 +14,8 @@ function javav
     if test -n "$JAVA_11_HOME"
         set PATH (string match -v $JAVA_11_HOME/bin $PATH)
     end
-    if test -n "$JAVA_12_HOME"
-        set PATH (string match -v $JAVA_12_HOME/bin $PATH)
+    if test -n "$JAVA_13_HOME"
+        set PATH (string match -v $JAVA_13_HOME/bin $PATH)
     end
 
     # Make sure the executables of the current $JAVA_HOME JDK are first on
