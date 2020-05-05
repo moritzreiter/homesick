@@ -31,5 +31,9 @@
     {
         "key": "alt+`",
         "command": "workbench.action.terminal.focusNext"
+    },
+    {
+        "key": "alt+r",
+        "command": "java.test.explorer.runAll"
     }
 ]
