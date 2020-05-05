@@ -4,13 +4,13 @@ if v:version >= 800 && !has('nvim')
   source $VIMRUNTIME/defaults.vim
 endif
 
-" Always show the powerful powerline.
-if has("python3")
-  python3 from powerline.vim import setup as powerline_setup
-  python3 powerline_setup()
-  python3 del powerline_setup
-  set laststatus=2
-endif
+" For some reason Vim can't find the Powerline module :(
+"if has("python3")
+"  python3 from powerline.vim import setup as powerline_setup
+"  python3 powerline_setup()
+"  python3 del powerline_setup
+"  set laststatus=2
+"endif
 
 set background=dark
 
