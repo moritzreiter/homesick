@@ -9,24 +9,12 @@
         "command": "git.commitStaged"
     },
     {
-        "key": "cmd+up",
-        "command": "workbench.action.toggleMaximizedPanel"
-    },
-    {
         "key": "alt+p",
         "command": "git.push"
     },
     {
-        "key": "alt+q",
-        "command": "-extension.queryBuild"
-    },
-    {
-        "key": "ctrl+cmd+w",
+        "key": "alt+w",
         "command": "workbench.action.quickSwitchWindow"
-    },
-    {
-        "key": "ctrl+cmd+w",
-        "command": "-workbench.action.toggleTabsVisibility"
     },
     {
         "key": "alt+`",
@@ -35,5 +23,17 @@
     {
         "key": "alt+r",
         "command": "java.test.explorer.runAll"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "-workbench.action.switchWindow"
+    },
+    {
+        "key": "shift+cmd+0",
+        "command": "workbench.action.zoomReset"
+    },
+    {
+        "key": "cmd+numpad0",
+        "command": "-workbench.action.zoomReset"
     }
 ]
