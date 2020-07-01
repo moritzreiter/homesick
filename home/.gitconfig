@@ -40,6 +40,8 @@
   excludesFile = ~/.gitignore_global
 [push]
   default = simple
+[pull]
+  ff = only
 [diff]
   tool = meld
 [merge]
