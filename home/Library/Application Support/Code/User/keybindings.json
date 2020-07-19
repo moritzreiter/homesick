@@ -35,5 +35,14 @@
     {
         "key": "cmd+numpad0",
         "command": "-workbench.action.zoomReset"
+    },
+    {
+        "key": "cmd+k cmd+i",
+        "command": "editor.action.showHover"
+    },
+    {
+        "key": "cmd+k cmd+i",
+        "command": "-editor.action.showHover",
+        "when": "editorTextFocus"
     }
 ]
