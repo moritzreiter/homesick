@@ -6,17 +6,9 @@ set -x PYTHONSTARTUP ~/.pythonrc
 set -x PIP_REQUIRE_VIRTUALENV true
 set -x VIRTUAL_ENV_DISABLE_PROMPT true
 
-# Time format for oh-my-fish theme 'bobthefish'
+# Time settings for oh-my-fish theme 'bobthefish'
 set -g theme_date_format "+%a %b %d %H:%M:%S"
-
-# Show current kubernetes context in 'bobthefish' prompt
-set -g theme_display_k8s_context yes
-
-# Docker apps
-alias jshell-docker='docker run --rm -it openjdk:10-jdk'
-alias wappalyzer='docker run --rm wappalyzer/cli'
-
-alias emacs='emacs --no-window-system'
+set -g theme_date_timezone Europe/Berlin
 
 alias svim='sudo -E vim'
 
