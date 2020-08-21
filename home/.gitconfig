@@ -34,6 +34,8 @@
 
   # Cleanup
   cleanup-merged-branches = "!git branch --merged | grep  -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d"
+
+  quick-checkout = "!YARNHOOK_BYPASS=true git checkout"
 [core]
   # Get mad if tabs are used for indentation
   whitespace = tab-in-indent
