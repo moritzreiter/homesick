@@ -25,9 +25,6 @@ end
     source $workDir"/config.ssh-keychain.fish"
 end
 
-# https://github.com/mattreduce/oblique-fortunes
-# Would be nice to add --quiet to the command call, but it's not supported
-# in fish 2.4 which is still in use on Raspbian
-if begin set -q TERM; and command --search fortune; end
+if begin set -q TERM; and command --quiet --search fortune; end
     fortune oblique
 end
