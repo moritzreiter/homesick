@@ -19,7 +19,7 @@ if test (uname) = Darwin
 end
 
 if begin
-    test (hostname) = graviton
+    test (hostname) = golem-pi3
     or test (hostname) = golem-pi-zero
 end
     source $workDir"/config.ssh-keychain.fish"
