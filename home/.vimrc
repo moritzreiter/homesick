@@ -34,6 +34,9 @@ autocmd Filetype "gitcommit" setlocal spell textwidth=72
 autocmd BufReadPost COMMIT_EDITMSG
   \ exe "normal! gg"
 
+" Bind F2 to toggling NERDTree
+map <F2> :NERDTreeToggle<CR>
+
 " Bind 'Ctrl-J' to split lines
 nnoremap <NL> i<CR><ESC>
 
@@ -43,6 +46,7 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'wilriker/vim-fish'
 Plug 'chr4/nginx.vim'
 Plug 'tpope/vim-surround'
+Plug 'preservim/nerdtree'
 call plug#end()
 
 if !($TERM_PROGRAM == "vscode")
