@@ -14,7 +14,7 @@ endif
 
 set background=dark
 
-" With this mouse mode, standard copy and paste works in macOS
+" Supports copy & paste and scrolling on macOS and scrolling in Blink
 set mouse=a
 
 " Use 2 spaces for indentation
@@ -25,6 +25,10 @@ set hlsearch
 
 " Show line numbers
 "set number
+
+" Vim on Raspberry Pi OS doesn't have TypeScript support out of the box
+autocmd BufNewFile,BufRead *.ts set filetype=typescript
+autocmd BufNewFile,BufRead *.tsx set filetype=typescriptreact
 
 " Help to write better git commit messages
 " <https://robots.thoughtbot.com/5-useful-tips-for-a-better-commit-message>
