@@ -18,6 +18,14 @@ if test (eval $java_home_cmd -v14)
 end
 set -x JAVA_HOME $JAVA_11_HOME
 
+# Node (https://medium.com/@joshuacrass/nvm-on-mac-for-fish-users-e00af124c540)
+function nvm
+   bass source (brew --prefix nvm)/nvm.sh --no-use ';' nvm $argv
+end
+
+set -x NVM_DIR ~/.nvm
+nvm use default --silent
+
 # Python
 alias pip='pip3'
 
