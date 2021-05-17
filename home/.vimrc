@@ -20,9 +20,6 @@ set mouse=a
 " Use 2 spaces for indentation
 set tabstop=8 softtabstop=0 expandtab shiftwidth=2 smarttab
 
-" Highlight searches
-set hlsearch
-
 " Show line numbers
 "set number
 

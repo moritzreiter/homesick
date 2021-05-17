@@ -3,18 +3,14 @@ set -x LC_ALL en_US.UTF-8
 set -x LANG en_US.UTF-8
 
 # Java
-set -x JAVA_8_HOME ''
 set -x JAVA_11_HOME ''
-set -x JAVA_14_HOME ''
+set -x JAVA_15_HOME ''
 set java_home_cmd '/usr/libexec/java_home 2>/dev/null --failfast'
-if test (eval $java_home_cmd -v1.8)
-    set -x JAVA_8_HOME (eval $java_home_cmd -v1.8)
-end
 if test (eval $java_home_cmd -v11)
     set -x JAVA_11_HOME (eval $java_home_cmd -v11)
 end
-if test (eval $java_home_cmd -v14)
-    set -x JAVA_14_HOME (eval $java_home_cmd -v14)
+if test (eval $java_home_cmd -v15)
+    set -x JAVA_15_HOME (eval $java_home_cmd -v15)
 end
 set -x JAVA_HOME $JAVA_11_HOME
 
