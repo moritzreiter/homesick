@@ -23,6 +23,9 @@ set tabstop=8 softtabstop=0 expandtab shiftwidth=2 smarttab
 " Show line numbers
 "set number
 
+" Don't break words when soft wrapping
+set linebreak
+
 " Vim on Raspberry Pi OS doesn't have TypeScript support out of the box
 autocmd BufNewFile,BufRead *.ts set filetype=typescript
 autocmd BufNewFile,BufRead *.tsx set filetype=typescriptreact
