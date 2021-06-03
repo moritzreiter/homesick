@@ -4,13 +4,13 @@ set -x LANG en_US.UTF-8
 
 # Java
 set -x JAVA_11_HOME ''
-set -x JAVA_15_HOME ''
+set -x JAVA_16_HOME ''
 set java_home_cmd '/usr/libexec/java_home 2>/dev/null --failfast'
 if test (eval $java_home_cmd -v11)
     set -x JAVA_11_HOME (eval $java_home_cmd -v11)
 end
-if test (eval $java_home_cmd -v15)
-    set -x JAVA_15_HOME (eval $java_home_cmd -v15)
+if test (eval $java_home_cmd -v16)
+    set -x JAVA_16_HOME (eval $java_home_cmd -v16)
 end
 set -x JAVA_HOME $JAVA_11_HOME
 
