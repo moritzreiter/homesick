@@ -4,7 +4,6 @@ function syncdir
   if [ $input != y ]
     return 1
   end
-  echo "boom"
   rsync -avh --delete $argv
 end
 
