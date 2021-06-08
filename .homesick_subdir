@@ -10,3 +10,4 @@ Library/Application Support/Code/User
 .config/fish/completions
 .vim/syntax
 .config/Code/User
+.vim/ftplugin

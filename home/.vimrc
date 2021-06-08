@@ -47,7 +47,7 @@ nnoremap <NL> i<CR><ESC>
 " Plugins managed by `vim-plug`
 call plug#begin('~/.vim/plugged')
 Plug 'altercation/vim-colors-solarized'
-Plug 'wilriker/vim-fish'
+Plug 'dag/vim-fish'
 Plug 'chr4/nginx.vim'
 Plug 'tpope/vim-surround'
 Plug 'preservim/nerdtree'
