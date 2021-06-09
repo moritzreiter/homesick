@@ -31,3 +31,7 @@ alias net-listening='lsof -i TCP -s TCP:LISTEN -nP'
 alias proc-monitor='top -o cpu -stats pid,command,cpu,mem,time,threads,state'
 alias net-monitor-wired='nettop -d -P -J bytes_in,bytes_out -t wired'
 alias net-monitor-wifi='nettop -d -P -J bytes_in,bytes_out -t wifi'
+
+# Starship Prompt
+starship init fish | source
+
