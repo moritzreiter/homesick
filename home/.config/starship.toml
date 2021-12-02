@@ -1,0 +1,6 @@
+format = "$time$all"
+
+[time]
+format = "[$time]($style) "
+disabled = false
+time_format = '%F %T'
