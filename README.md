@@ -68,4 +68,4 @@ Reverting the changes done with Homesick is a two step process:
    rsync --archive ~/.homesick/repos/dotfiles/home/ ~/
    ```
 
-Replace `dotfiles` with the name of your actual castle.
+   Replace `dotfiles` with the name of your actual castle.
