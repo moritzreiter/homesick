@@ -55,3 +55,17 @@ this by executing `:version` inside `vim`.
 
 Also, for the `solarized` color theme to not look wacky, don't forget to also
 set your terminals color palette to solarized.
+
+## Revert
+
+Reverting the changes done with Homesick is a two step process:
+
+1. Remove the symlinks created by Homesick with `homesick unlink`. 
+2. Unfortunately the `unlink` command doesn't copy the config files back to
+   their original locations. Use `rsync` to that manually:
+   
+   ```
+   rsync --archive ~/.homesick/repos/dotfiles/home/ ~/
+   ```
+
+Replace `dotfiles` with the name of your actual castle.
